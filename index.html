@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfredo (Ed) Garcia | Principal IT Consultant</title>
     <link rel="icon" href="assets/img/icon-nusait.webp" sizes="192x192" type="image/webp" />
-    <meta name="description" content="Portfolio and Governance Toolkit of Ed Garcia, Principal at NusaIT.">
-    
+    <meta name="description" content="Portfolio of Ed Garcia: IT governance, enterprise architecture, open-source management tools, and free Decision Lab v2 calculators for AHP, TOPSIS, SAW, decision trees, and Bayesian analysis.">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:title" content="Alfredo (Ed) Garcia | IT Governance & Decision Lab">
+    <meta property="og:description" content="Explore IT governance tools and free, browser-based Decision Lab v2 calculators for students, lecturers, and researchers.">
+    <meta property="og:url" content="https://edgarcia-id.github.io/">
+    <meta property="og:type" content="website">
+
     <!-- Fonts & CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; }
-        
+
         /* Navigation (Subtle) */
         .navbar-custom { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
         .brand-text { font-weight: 800; color: #0f172a; letter-spacing: -0.5px; font-size: 1.2rem; }
-        
+
         /* Hero Section (Enterprise Left-Aligned) */
         .hero { background-color: #0f172a; color: #ffffff; padding: 100px 0 80px; position: relative; overflow: hidden; }
         .hero::after { content: ''; position: absolute; right: -10%; top: -20%; width: 50%; height: 150%; background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(59, 130, 246, 0.1) 100%); transform: rotate(-15deg); pointer-events: none; }
         .hero-title { font-weight: 800; font-size: 3.5rem; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px; }
         .hero-subtitle { font-size: 1.25rem; color: #94a3b8; font-weight: 300; max-width: 600px; margin-bottom: 35px; }
         .hero-tag { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: #38bdf8; font-weight: 600; display: block; margin-bottom: 15px; }
-        
+
         /* Buttons */
         .btn-consult { background-color: #ffffff; color: #0f172a; font-weight: 600; padding: 12px 30px; border-radius: 6px; border: none; transition: all 0.3s; }
         .btn-consult:hover { background-color: #f1f5f9; transform: translateY(-2px); }
         .btn-outline-light { border-color: rgba(255,255,255,0.2); font-weight: 600; padding: 12px 30px; border-radius: 6px; }
-        
+
         /* The "Why" Section */
         .pillars-section { padding: 60px 0; background: #ffffff; border-bottom: 1px solid #e2e8f0; }
         .pillar-box { padding: 20px 0; }
@@ -43,18 +48,39 @@
         .section-header { margin-bottom: 50px; }
         .section-header h2 { font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
         .section-header p { color: #64748b; font-size: 1.1rem; max-width: 600px; }
-        
+
         .category-label { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #94a3b8; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
-        
+
         .tool-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 30px 25px; height: 100%; display: block; text-decoration: none; transition: all 0.2s ease; position: relative; }
         .tool-card:hover { border-color: #cbd5e1; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05); text-decoration: none; transform: translateY(-3px); }
         .tool-card:hover h5 { color: #2563eb; }
-        
+
         .card-icon { font-size: 1.2rem; color: #475569; margin-bottom: 20px; background: #f1f5f9; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 6px; }
         .tool-card h5 { font-weight: 700; font-size: 1.1rem; color: #0f172a; margin-bottom: 10px; transition: color 0.2s; }
         .tool-card p { font-size: 0.9rem; color: #64748b; margin-bottom: 0; }
         .link-arrow { position: absolute; top: 30px; right: 25px; color: #cbd5e1; font-size: 0.9rem; transition: color 0.2s; }
         .tool-card:hover .link-arrow { color: #2563eb; }
+
+
+        /* Decision Lab v2 */
+        .decision-lab-section { width: 100%; margin-left: 0; padding: 80px 0; background: #ffffff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+        .decision-lab-intro { max-width: 780px; color: #64748b; font-size: 1.05rem; }
+        .decision-lab-kicker { display: inline-flex; align-items: center; gap: 8px; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 999px; padding: 6px 12px; font-size: .78rem; font-weight: 700; letter-spacing: .04em; margin-bottom: 16px; }
+        .decision-card { height: 100%; display: flex; flex-direction: column; background: #fff; border: 1px solid #dbe4ee; border-radius: 12px; padding: 27px; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+        .decision-card:hover { transform: translateY(-4px); border-color: #7dd3fc; box-shadow: 0 14px 32px rgba(15, 23, 42, .08); }
+        .decision-card:focus-visible { outline: 3px solid #38bdf8; outline-offset: 3px; }
+        .decision-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+        .decision-card .card-icon { width: 46px; height: 46px; border-radius: 10px; margin-bottom: 0; font-size: 1.25rem; color: #0369a1; background: #e0f2fe; flex: 0 0 auto; }
+        .decision-card .tool-version { display: inline-block; border: 1px solid #dbeafe; background: #eff6ff; color: #1d4ed8; border-radius: 999px; padding: 4px 9px; font-size: .72rem; font-weight: 700; white-space: nowrap; }
+        .decision-card h3 { font-size: 1.08rem; font-weight: 800; color: #0f172a; line-height: 1.4; margin-bottom: 10px; }
+        .decision-card p { font-size: .91rem; color: #64748b; line-height: 1.7; margin-bottom: 22px; }
+        .decision-card .decision-card-link { margin-top: auto; display: flex; align-items: center; gap: 8px; color: #0369a1; font-weight: 700; font-size: .88rem; }
+        .decision-lab-note { display: flex; align-items: flex-start; gap: 12px; margin-top: 28px; padding: 18px 20px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; color: #475569; font-size: .9rem; }
+        .decision-lab-note i { color: #0284c7; margin-top: 4px; }
+        @media (max-width: 767.98px) {
+            .decision-lab-section { padding: 60px 0; }
+            .decision-card { padding: 23px; }
+        }
 
         /* Footer */
         .footer { background: #ffffff; border-top: 1px solid #e2e8f0; padding: 40px 0; font-size: 0.9rem; color: #64748b; }
@@ -70,6 +96,7 @@
             <div class="brand-text">ED GARCIA</div>
             <div class="small">
                 <a href="https://nusait.com" class="text-decoration-none text-muted me-4">NusaIT Consulting</a>
+                <a href="#decision-lab-v2" class="text-decoration-none text-muted me-4">Decision Lab v2</a>
                 <a href="https://www.linkedin.com/in/alfredo-garcia-elbarta-tarigan/" class="text-decoration-none text-muted"><i class="fab fa-linkedin fs-5"></i></a>
             </div>
         </div>
@@ -242,6 +269,96 @@
                 </div>
             </div>
 
+
+        </div>
+    </section>
+
+    <!-- Decision Lab v2: Free academic decision calculators -->
+    <section id="decision-lab-v2" class="decision-lab-section" aria-labelledby="decision-lab-title">
+        <div class="container">
+            <div class="section-header mb-4">
+                        <span class="decision-lab-kicker"><i class="fas fa-graduation-cap" aria-hidden="true"></i> FREE ACADEMIC TOOLKIT</span>
+                        <h2 id="decision-lab-title">Decision Lab v2</h2>
+                        <p class="decision-lab-intro">
+                            Free decision-method calculators for students, lecturers, and researchers. Explore calculations step by step, compare alternatives transparently, and export reports to support coursework, research, and thesis preparation.
+                        </p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <a href="https://edgarcia-id.github.io/ahp-decision-engine-v2/" class="decision-card" target="_blank" rel="noopener noreferrer" aria-label="Open AHP Decision Engine v2">
+                                <div class="decision-card-top">
+                                    <div class="card-icon"><i class="fas fa-scale-balanced" aria-hidden="true"></i></div>
+                                    <span class="tool-version">ENGINE V2</span>
+                                </div>
+                                <h3>AHP Decision Engine v2</h3>
+                                <p>Build multi-level decision hierarchies with Saaty 1–9 pairwise comparisons, eigenvector weights, and Consistency Ratio checks with suggestions to improve inconsistent judgments. Includes incomplete judgments (Harker), group decisions (AIJ), and Expert Choice–style sensitivity analysis. Export PDF reports and Excel workbooks with live formulas.</p>
+                                <span class="decision-card-link">Open calculator <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <a href="https://edgarcia-id.github.io/topsis-decision-engine-v2/" class="decision-card" target="_blank" rel="noopener noreferrer" aria-label="Open TOPSIS Decision Engine v2">
+                                <div class="decision-card-top">
+                                    <div class="card-icon"><i class="fas fa-chart-column" aria-hidden="true"></i></div>
+                                    <span class="tool-version">ENGINE V2</span>
+                                </div>
+                                <h3>TOPSIS Decision Engine v2</h3>
+                                <p>Rank alternatives using manual, Entropy, CRITIC, or AHP-derived weights and four normalization methods. Review step-by-step tables, C*/D⁺/D⁻ charts, heatmaps, radar charts, weight-sensitivity stability intervals, and rank-reversal checks. Export PDF, Word, Excel with live formulas, CSV, or shareable links.</p>
+                                <span class="decision-card-link">Open calculator <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <a href="https://edgarcia-id.github.io/saw-calculator-engine-v2/" class="decision-card" target="_blank" rel="noopener noreferrer" aria-label="Open SAW Calculator Engine v2">
+                                <div class="decision-card-top">
+                                    <div class="card-icon"><i class="fas fa-calculator" aria-hidden="true"></i></div>
+                                    <span class="tool-version">ENGINE V2</span>
+                                </div>
+                                <h3>SAW Calculator Engine v2</h3>
+                                <p>Apply Simple Additive Weighting with benefit and cost criteria, sub-criteria using crisp ranges or labels, and multi-rater assessments. Choose manual, Entropy, CRITIC, or AHP weights; compare three normalization methods; test weight sensitivity; and compare results side by side with WP and TOPSIS. Exports include PDF, Word, Excel with live formulas, CSV, and shareable links.</p>
+                                <span class="decision-card-link">Open calculator <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <a href="https://edgarcia-id.github.io/decision-tree-calculator-v2/" class="decision-card" target="_blank" rel="noopener noreferrer" aria-label="Open Decision Tree Calculator v2">
+                                <div class="decision-card-top">
+                                    <div class="card-icon"><i class="fas fa-diagram-project" aria-hidden="true"></i></div>
+                                    <span class="tool-version">ENGINE V2</span>
+                                </div>
+                                <h3>Decision Tree Calculator v2</h3>
+                                <p>Create decision trees or payoff tables with variables and formulas. Use EMV rollback to identify an optimal policy, evaluate uncertainty with Maximax, Maximin, Hurwicz, Laplace, and Minimax Regret, and analyze risk profiles, utility, certainty equivalents, tornado/spider/two-way sensitivity, EVPI, Bayesian revision, and EVSI. Export PDF, Word, and Excel with live rollback formulas.</p>
+                                <span class="decision-card-link">Open calculator <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6">
+                            <a href="https://edgarcia-id.github.io/bayesian-calculator-engine-v2/" class="decision-card" target="_blank" rel="noopener noreferrer" aria-label="Open Bayesian Calculator Engine v2">
+                                <div class="decision-card-top">
+                                    <div class="card-icon"><i class="fas fa-dice" aria-hidden="true"></i></div>
+                                    <span class="tool-version">ENGINE V2</span>
+                                </div>
+                                <h3>Bayesian Calculator Engine v2</h3>
+                                <p>Build multi-state Bayesian networks with exact inference and hard or soft evidence. Explore most probable explanation (MPE), evidence conflict, value of information, parameter sensitivity, d-separation, and decision analysis. Learn conditional probability tables from data using EM; import and export GeNIe (.xdsl) and BIF files; and export PDF, Word, and Excel reports with live formulas.</p>
+                                <span class="decision-card-link">Open calculator <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="decision-lab-note">
+                        <i class="fas fa-circle-info" aria-hidden="true"></i>
+                        <div>
+                            <strong>Free to use. Runs in your browser.</strong><br>
+                            No account or server is required for calculations. The interface is in Bahasa Indonesia, and the tools are designed to make each step visible for learning, verification, and research documentation. Verify methods, assumptions, and results before including them in academic work.
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Compliance & Automation tools -->
+    <section class="toolkit-section" aria-label="Compliance and automation tools">
+        <div class="container">
             <!-- Documents & Automation -->
             <div class="category-label mt-5">Compliance & Automation</div>
             <div class="row g-4">
